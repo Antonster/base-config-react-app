@@ -1,5 +1,5 @@
 import { exampleJpg } from 'src/assets';
-import ExampleCommonComponent from 'src/components/example-common-component';
+import { ExampleCommonComponent } from 'src/components';
 
 const App = () => (
   <div className="App">
