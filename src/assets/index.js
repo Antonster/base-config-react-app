@@ -1,1 +1,1 @@
-export { default as exampleJpg } from './images/example.jpg';
+export * as images from './images';

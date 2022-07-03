@@ -1,13 +1,12 @@
-import { exampleJpg } from 'src/assets';
+import { Route, Routes } from 'react-router-dom';
+import { images } from 'src/assets';
 import { ExampleCommonComponent } from 'src/components';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={exampleJpg} className="App-logo" alt="logo" />
-      <ExampleCommonComponent />
-    </header>
-  </div>
+  <Routes>
+    <Route path="/" element={<ExampleCommonComponent />} />
+    <Route path="example" element={<img src={images.exampleJpg} alt="" />} />
+  </Routes>
 );
 
 export default App;
